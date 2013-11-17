@@ -7,9 +7,9 @@ class T3Logic
 	 int p,q;
 	 int level = 1;
 	 String res="none";
-	 
+
 	 char ar[][] = {{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}};
-	 
+
 	 int getP()
 	 {
 		 return p;
@@ -25,9 +25,6 @@ class T3Logic
 		 if(ar[r][c]==' ')
 		 {
 			 ar[r][c]='O';
-			 try{
-				Thread.sleep(500);
-			 }catch(Exception ee){}
 			 if(checkWin())
 				return res;
 			 else
@@ -82,7 +79,7 @@ class T3Logic
 					ar[p][q] = 'X';
 					flag = false;
 				}
-			}while(flag);		
+			}while(flag);
 		}
 		else if(level==2)
 		{
@@ -98,7 +95,7 @@ class T3Logic
 						ar[p][q] = 'X';
 						flag = false;
 					}
-				}while(flag);	
+				}while(flag);
 			}
 			else
 			{
@@ -240,7 +237,7 @@ class T3Logic
 			switch(ran)
 			{
 				case 1:
-				{	
+				{
 					 if(ar[0][1]==o && ar[2][1]==' ')
 					 {  ar[2][1]=x; p=2;q=1;	}
 					 else if(ar[0][1]==' ' && ar[2][1]==o)
@@ -284,7 +281,7 @@ class T3Logic
 					 break;
 				}
 				case 3:
-				{	
+				{
 					 if(ar[1][0]==' ' && ar[1][2]==o)
 					 {	ar[1][0]=x; p=1;q=0;	}
 					 else if(ar[1][0]==o && ar[1][2]==' ')
@@ -306,7 +303,7 @@ class T3Logic
 					 break;
 				}
 				case 4:
-				{					 
+				{
 					 if(ar[0][0]==' ' && ar[2][2]==o)
 					 {	ar[0][0]=x; p=0;q=0;	}
 					 else if(ar[0][0]==o && ar[2][2]==' ')
@@ -328,7 +325,7 @@ class T3Logic
 					 break;
 				}
 				case 5:
-				{	
+				{
 					 if(ar[0][2]==o && ar[2][0]==' ')
 					 {  ar[2][0]=x; p=2;q=0;	}
 					 else if(ar[0][0]==' ' && ar[2][2]==o)
