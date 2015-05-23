@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Tic Tac Toe
+Exec=java T3Game
+Type=Application
+StartupNotify=true
+Path=/media/Maven/TicTacToe/T3_GUI/
+Icon=/home/mav3n/Icons/t3i.png
+
