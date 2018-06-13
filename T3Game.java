@@ -1,4 +1,4 @@
-/*	Tic Tac Toe Game - GUI	*/
+/*	Tic Tac Toe Game - GUI Code Class	*/
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
